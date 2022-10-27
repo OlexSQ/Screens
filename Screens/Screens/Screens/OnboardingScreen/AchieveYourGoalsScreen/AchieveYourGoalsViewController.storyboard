@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FLq-aq-lBx">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Achieve Your Goals View Controller-->
+        <scene sceneID="nvR-tX-7lX">
+            <objects>
+                <viewController storyboardIdentifier="AchieveYourGoalsViewController" id="FLq-aq-lBx" customClass="AchieveYourGoalsViewController" customModule="Screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNs-vm-3e8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieveYourGoals" translatesAutoresizingMaskIntoConstraints="NO" id="j02-vG-bRn">
+                                <rect key="frame" x="28" y="147" width="334" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="zlW-NJ-bYF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achieve Your Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9x-vY-cDF">
+                                <rect key="frame" x="28" y="467" width="334" height="32.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" name="contentPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boosted productivity will help you achieve the desired goals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-9z-BZo">
+                                <rect key="frame" x="28" y="511.66666666666669" width="334" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="contentPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UdY-So-Woc"/>
+                        <color key="backgroundColor" name="backgroundPrimary"/>
+                        <constraints>
+                            <constraint firstItem="gAK-9z-BZo" firstAttribute="leading" secondItem="UdY-So-Woc" secondAttribute="leading" constant="28" id="L5I-tH-6ML"/>
+                            <constraint firstAttribute="trailing" secondItem="gAK-9z-BZo" secondAttribute="trailing" constant="28" id="OHu-ut-tYO"/>
+                            <constraint firstItem="gAK-9z-BZo" firstAttribute="top" secondItem="e9x-vY-cDF" secondAttribute="bottom" constant="12" id="PIT-E0-zdb"/>
+                            <constraint firstItem="e9x-vY-cDF" firstAttribute="leading" secondItem="UdY-So-Woc" secondAttribute="leading" constant="28" id="RS8-Un-cAX"/>
+                            <constraint firstItem="j02-vG-bRn" firstAttribute="leading" secondItem="UdY-So-Woc" secondAttribute="leading" constant="28" id="cDa-kb-Faw"/>
+                            <constraint firstItem="e9x-vY-cDF" firstAttribute="top" secondItem="j02-vG-bRn" secondAttribute="bottom" constant="40" id="mRQ-Nz-qSi"/>
+                            <constraint firstItem="UdY-So-Woc" firstAttribute="trailing" secondItem="j02-vG-bRn" secondAttribute="trailing" constant="28" id="oYi-46-vxX"/>
+                            <constraint firstItem="UdY-So-Woc" firstAttribute="trailing" secondItem="e9x-vY-cDF" secondAttribute="trailing" constant="28" id="rif-jr-F4b"/>
+                            <constraint firstItem="j02-vG-bRn" firstAttribute="top" secondItem="UdY-So-Woc" secondAttribute="top" constant="100" id="wgb-dX-vRH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="additionalLabel" destination="gAK-9z-BZo" id="lBq-j2-lxo"/>
+                        <outlet property="bigImageView" destination="j02-vG-bRn" id="jo0-gS-32P"/>
+                        <outlet property="mainLabel" destination="e9x-vY-cDF" id="adC-bd-uSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7g-ed-4cR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="achieveYourGoals" width="319" height="280"/>
+        <namedColor name="backgroundPrimary">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="contentPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
